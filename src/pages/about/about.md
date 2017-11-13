@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 path: /about
-title: About 4Displays
+title: About 4displays
 ---
 Based in Auckland, 4displays have been in the display business since 1997 designing, manufacturing and supplying all kinds of display systems. From small & medium size items like brochure, poster and menu holders, to large complex creations and retail display for merchandising, so if you need some kind of signage, custom made unit, or something to hold your promotional material, you have come to the right place!
 

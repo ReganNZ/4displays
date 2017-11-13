@@ -25,6 +25,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "faq-page"}
+      - {label: "Path", name: "path", widget: "hidden", default: "/faq"}
       - {label: "Question", name: "title", widget: "string", tagname: "h1"}
       - {label: "Answer", name: "body", widget: "markdown"}
 

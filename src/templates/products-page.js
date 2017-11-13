@@ -8,10 +8,8 @@ export default function Template({ data }) {
       <Helmet title={`Blog | ${post.frontmatter.title}`} />
       <div className="container content">
         <h1 className="title is-size-2 has-text-info is-bold-light">{post.frontmatter.title}</h1>
-        <div>${post.frontmatter.subtitle}</div>
         <div>price: </div>
-        <div>${post.frontmatter.price}</div>
-        <div>{post.frontmatter.sku}</div>
+     
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </section>
@@ -26,9 +24,7 @@ export const productsPageQuery = graphql`
         path
         date(formatString: "MMMM DD, YYYY")
         title
-        price
-        sku
-        subtitle
+      
       }
     }
   }

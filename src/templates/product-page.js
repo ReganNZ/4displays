@@ -1,30 +1,26 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
-export default ({ data }) => {
+export default function Template({ data }) {
   const { markdownRemark: post } = data;
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-7">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-primary is-bold-light">{post.frontmatter.title}</h2>
-              <div className="content" dangerouslySetInnerHTML={{ __html: post.html }} />
-            </div>
-          </div>
-          <div className="column is-5" />
-        </div>
+    <section className="section">
+      <Helmet title={`Blog | ${post.frontmatter.title}`} />
+      <div className="container content">
+        <h1 className="title is-size-2 has-text-info is-bold-light">{post.frontmatter.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </section>
   );
-};
+}
 
-export const aboutPageQuery = graphql`
-  query AboutPage($path: String!) {
+export const pageQuery = graphql`
+  query ProductByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
         path
+        date(formatString: "MMMM DD, YYYY")
         title
       }
     }

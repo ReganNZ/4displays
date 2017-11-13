@@ -8,3 +8,5 @@ Based in Auckland, 4displays have been in the display business since 1997 design
 John, the founder and director of 4 Displays is ready to help in all areas of custom and ready made displays, big or small!
 
 Check out our product range on the menu above! Do get in touch - for any questions. We look forward to helping you with the right display solution! It is worthwhile following our [news](http://www.4displays.co.nz/news/)link, for the latest updates.
+
+![John Balderston](/img/john.png)

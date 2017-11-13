@@ -33,14 +33,13 @@ collections:
   - name: "products" 
     label: "Products"
     folder: "src/pages/products"
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true 
     fields: 
         - {label: "Path", name: "path", widget: "string"}
         - {label: "Title", name: "title", widget: "string"}
+        - {label: "Publish Date", name: "date", widget: "datetime"}
         - {label: "SKU", name: "sku", widget: "string" }
         - {label: "Price", name: "price", widget: "number"}
-        - {label: "Image", name: "image", widget: "string"}
         - {label: "Body", name: "body", widget: "markdown"}  
-        - {label: "Slug", name: "slug", widget: "string" }
-        - {label: "Layout", name: "layout", widget: "hidden", default: "productdetails"}
+     

@@ -10,11 +10,16 @@ const Navbar = () => (
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          Gatsby powered by Netlify CMS
+          Home
+        </Link>
+      </div>
+       <div className="navbar-start">
+        <Link className="navbar-item" to="/faq">
+          FAQ
         </Link>
       </div>
       <div className="navbar-start">
-        <Link className="navbar-item" to="/products">
+        <Link className="navbar-item" to="/a">
           Products
         </Link>
       </div>

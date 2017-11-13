@@ -1,7 +1,7 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
-title: A Dance With Dragons
+title: A Dance With Dragons2
 ---
 The Dothraki do things in their own time, for their own reasons. Fire and blood. When you play the game of thrones, you win or you die. The Dothraki do things in their own time, for their own reasons. What is dead may never die.
 

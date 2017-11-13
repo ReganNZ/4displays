@@ -26,6 +26,9 @@ export const productsPageQuery = graphql`
         path
         date(formatString: "MMMM DD, YYYY")
         title
+        price
+        sku
+        subtitle
       }
     }
   }

@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: ReganNZ/4displays
   branch: master
 
 media_folder: "/src/pages/blog/img"
@@ -28,3 +29,16 @@ collections:
       - {label: "Path", name: "path", widget: "hidden", default: "/about"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "products" 
+    label: "Products"
+    folder: "_products"
+    slug: "{{slug}}"
+    create: true 
+    fields: 
+        - {label: "SKU", name: "sku", widget: "string" }
+        - {label: "Price", name: "price", widget: "number"}
+        - {label: "Image", name: "image", widget: "string"}
+        - {label: "Body", name: "body", widget: "string"}  
+        - {label: "Slug", name: "slug", widget: "string" }
+        - {label: "Layout", name: "layout", widget: "hidden", default: "productdetails"}

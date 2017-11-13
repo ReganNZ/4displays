@@ -15,7 +15,7 @@ export default function Template({ data }) {
 }
 
 export const pageQuery = graphql`
-  query ProductByPath($path: String!) {
+  query ProductsByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {

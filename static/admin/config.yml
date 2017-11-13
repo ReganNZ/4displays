@@ -3,7 +3,7 @@ backend:
   repo: ReganNZ/4displays
   branch: master
 
-media_folder: "/src/pages/blog/img"
+media_folder: "/src/gallery"
 public_folder: "img"
 
 collections:
@@ -49,7 +49,7 @@ collections:
         - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
         - {label: "Path", name: "path", widget: "string"}
         - {label: "Title", name: "title", widget: "string"}
-        - {label: "Title", name: "subtitle", widget: "string"}
+        - {label: "Subtitle", name: "subtitle", widget: "string"}
 
         - {label: "Publish Date", name: "date", widget: "datetime"}
         - {label: "SKU", name: "sku", widget: "string" }

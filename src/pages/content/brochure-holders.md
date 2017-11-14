@@ -2,6 +2,6 @@
 templateKey: content
 path: /brochure-holders
 title: brochure-holders
-product: a
+product: hello
 ---
 Brochure Holders

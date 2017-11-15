@@ -1,7 +1,11 @@
 backend:
-  name: github
-  repo: ReganNZ/4displays
-  branch: master
+  # name: github
+  # repo: ReganNZ/4displays
+  # branch: master
+  name: git-gateway
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
 
 media_folder: "/src/gallery"
 public_folder: "img"
@@ -40,19 +44,42 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
+  - name: "content"
+    label: "Content"
+    folder: "src/pages/content"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "content-page"}
+      - {label: "Path", name: "path", widget: "string", default: "/content"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - name: product
+        label: Products
+        widget: relation
+        collection: products
+        searchFields: [title]
+        valueField: title
+
   - name: "products" 
     label: "Products"
     folder: "src/pages/products"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true 
     fields: 
+        - {label: "Uuid", name: "uuid", widget: "hidden", default: function(){return 23}}
+        
         - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
         - {label: "Path", name: "path", widget: "string"}
         - {label: "Title", name: "title", widget: "string"}
-        - {label: "Subtitle", name: "subtitle", widget: "string"}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+        - {label: "Gallery Image", name: "imgSrc", widget: "image", required: false}
 
         - {label: "Publish Date", name: "date", widget: "datetime"}
-        - {label: "SKU", name: "sku", widget: "string" }
+        - {label: "SKU", name: "sku", widget: "string", required: false}
         - {label: "Price", name: "price", widget: "number"}
-        - {label: "Body", name: "body", widget: "markdown"}  
+        - {label: "Weight", name: "price", widget: "hidden", default: "1"}
+
+        - {label: "Body", name: "body", widget: "markdown", required: false} 
+
      

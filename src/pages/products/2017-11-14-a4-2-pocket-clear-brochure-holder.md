@@ -6,6 +6,7 @@ subtitle: Free Stand or Wall Mount.
 date: 2017-11-13T23:27:55.736Z
 sku: '77865'
 price: '33.62'
+weight: '1'
 ---
 * High quality.
 * Economical.

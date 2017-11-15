@@ -1,5 +1,5 @@
 ---
-templateKey: content
+templateKey: content-page
 path: /brochure-holders
 title: brochure-holders
 product: hello

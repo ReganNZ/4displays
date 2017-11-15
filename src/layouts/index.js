@@ -28,6 +28,12 @@ const Navbar = () => (
           About
         </Link>
       </div>
+      <div className="navbar-start">
+        <Link className="navbar-item" to="/brochure-holders">
+          Brochure Holders
+        </Link>
+      </div>
+
       <div className="navbar-end">
         <a className="navbar-item" href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate" target="_blank">
           <span className="icon">

@@ -16,7 +16,7 @@ export default function Template({ data }) {
 
         <button
     className="snipcart-add-item"
-    data-item-id="2"
+    data-item-id={post.frontmatter.sku}
     data-item-name={post.frontmatter.title}
     data-item-price={post.frontmatter.price}
     data-item-weight={post.frontmatter.weight}

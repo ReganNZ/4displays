@@ -1,11 +1,11 @@
 backend:
-  name: github
-  repo: ReganNZ/4displays
-  branch: master
-  # name: git-gateway
-  # accept_roles: #optional - accepts all users if left out
-  #   - admin
-  #   - editor
+  # name: github
+  # repo: ReganNZ/4displays
+  # branch: master
+  name: git-gateway
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
 
 media_folder: "/src/gallery"
 public_folder: "img"

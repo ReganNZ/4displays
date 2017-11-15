@@ -67,7 +67,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true 
     fields: 
-        - {label: "Uuid", name: "uuid", widget: "hidden", default: function(){return 23}}
+        - {label: "Uuid", name: "uuid", widget: "hidden", default: "1"
         
         - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
         - {label: "Path", name: "path", widget: "string"}
